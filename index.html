@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Spotibyte</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1>Spotibyte</h1>
+            <img src="spotibyte.png">
+        </header>
+        <section id="account">
+
+            <h3>Create Account</h3>
+            <form>
+                <label for="firstName">First Name: </label>
+                <input name="firstName" required>
+                <label for="lastName">Last Name: </label>
+                <input name="lastName" required>
+                <label for="email">Email: </label>
+                <input name="email" required>
+                <label for="password">Password: </label>
+                <input name="password" type="password" required>
+                <input type="submit" onClick="newUser(event)">
+            </form>
+            <form>
+                
+                <h3>Add Song</h3>
+             <label for="name">Song Name: </label>
+                <input name="name" required>
+                <label for="length">Length (seconds): </label>
+                <input name="length" required>
+                <label for="date">Date: </label>
+                <input name="date" required>
+                <label for="artist">Artist: </label>
+                <input name="artist" required>
+                <label for="genre">Genre: </label>
+                <input name="genre" required>
+            <p> <input type="button" value="Add Song" onClick="addSongs(event)"></p>   </form> 
+        </section>
+        
+        <h3>Playlist</h3>
+        <section id="songs">
+            <h2>Songs</h2>
+            
+            
+            <form>
+                <label for="first">First Name: </label>
+                <input name="first" required>
+                <label for="last">Last Name: </label>
+                <input name="last" required>
+                <label for="email">Email: </label>
+                <input name="email" required>
+                <label for="password">Password: </label>
+                <input name="password" type="password" required>
+                <input type="submit" onClick="login(event)">
+                <label for="newsong">Add Song:</label>
+                <input name="newsong" required>
+                 <input type="submit" onClick="login(event)">
+            </form>
+        </section>
+        <section id="items">
+            <div class="item">
+                <h1>Music Genres</h1>
+                <h3>Pop</h3>
+                <img src="ariana2.jpg">
+                <p>Artist: Ariana Grande</p>
+                <p>Streams - 00</p>
+                <select name="Artist">
+                    <option value="xs">7 Rings</option>
+                    <option value="s">Thank you, next</option>
+                    <option value="m">No Tears Left to Cry</option>
+                    <option value="l">Greedy</option>
+                    <option value="xl">The Way</option>
+                    <option value="xxl">Side to Side</option>
+                </select>
+                <button onClick="addToPlay(1, event)">Play</button>
+                <button onClick="addToPlaylist(2, event)">Add to Playlist</button>
+                <p></p>
+                <button onClick="addToLike(1, event)">Like</button>
+                <button onClick="addToDislike(1, event)">Dislike</button>
+                 <p> <label for="newcomment">Comment:</label>
+                <input name="newcomment" required> <button onClick="addToSubmit(1, event)">Submit</button></p>
+            </div>
+            
+            <div class="item">
+
+
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
+
+
+
+
+
